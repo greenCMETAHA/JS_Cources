@@ -1,1 +1,1 @@
-# JS_Cources
+Курсы по JavaScript. Осень 2017
