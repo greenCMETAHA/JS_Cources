@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+	<link href="style.css" rel="stylesheet">
+    <title>Game  game 06</title>
+</head>
+
+<body>
+	<div id="menu" >
+			<a onclick="gameVariant(1)" class="menu">Text</a>  |<a onclick="gameVariant(2)" class="menu">Canvas</a>  |
+			<a onclick="gameVariant(3)" class="menu">SVG</a>  |<a href="http://phylife.ru" target="_blank" >phylife.ru</a>  |  
+			<a href="about/about.html">Обо мне</a>
+	</div><br>
+    <div id="game" >
+		<div id="textDIV">
+		</div>
+		<div id="canvasDIV">
+		</div>	
+		<div id="svgDIV">
+		</div>				
+		<table>
+			<tr>
+				<td>
+					<div id="buttons">
+						<button><img src="https://image.flaticon.com/icons/svg/26/26036.svg" class="button_icon" alt="back" onclick="buttonBack()"></button>
+						<button><img src="https://image.flaticon.com/icons/svg/26/26025.svg" class="button_icon" id="button_startstor" alt="play/stop" onclick="buttonPlay()"></button>
+						<button><img src="https://image.flaticon.com/icons/svg/26/26024.svg" class="button_icon" alt="forward" onclick="buttonForward()"></button>
+					</div>
+				</td>
+				<td>
+					<div id="size">
+						x:<input type="number" name="size_X" id="size_X" value="20" min="10" max="70" step="1"> 
+						y:<input type="number" name="size_Y" id="size_Y" value="30" min="10" max="70" step="1"> 
+					</div>
+				</td>
+			</tr>
+		</table>
+		<div id="speed">
+			<div id="slidecontainer">Скорость:
+			  <input type="range" min="500" max="5000" value="500" class="slider" id="gameSpeed">
+			</div>
+		</div>
+	
+	</div>
+   
+    <script src="main.js"></script>
+</body>
+
+</html>
